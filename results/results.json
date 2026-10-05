@@ -1,0 +1,54 @@
+{
+  "ran_at": "2026-10-04 19:59:26",
+  "provider": "deepseek",
+  "invariants": [
+    {
+      "name": "invariant: ownership survives SIGKILL",
+      "passed": true,
+      "not_run": false,
+      "detail": "killed=True state=in_progress note_kept=True claim_held=True",
+      "metrics": {}
+    },
+    {
+      "name": "invariant: expired lease becomes restartable",
+      "passed": true,
+      "not_run": false,
+      "detail": "expired_detected=True reclaimed=True live_lease_blocks_intruder=True",
+      "metrics": {}
+    },
+    {
+      "name": "invariant: only one of five claimants wins",
+      "passed": true,
+      "not_run": false,
+      "detail": "1 of 5 won: [1]",
+      "metrics": {}
+    },
+    {
+      "name": "invariant: a running task keeps its version",
+      "passed": true,
+      "not_run": false,
+      "detail": "pinned=v0 pinned_text_unchanged=True new_latest=v99 | negative_control_detects_mutation=True",
+      "metrics": {}
+    },
+    {
+      "name": "invariant: a boundary enforced in code holds better than prose",
+      "passed": true,
+      "not_run": false,
+      "detail": "trials=5 enforced_violations=0 prose_only_violations=0 empty(enforced=0 prose=0)",
+      "metrics": {
+        "enforced_violations": 0,
+        "prose_only_violations": 0,
+        "enforced_empty": 0,
+        "prose_empty": 0
+      }
+    },
+    {
+      "name": "invariant: refuter on a different provider",
+      "passed": false,
+      "not_run": true,
+      "detail": "NOT RUN: only one provider is configured (deepseek). The cross-provider invariant requires a second provider; a same-provider comparison would not test it.",
+      "metrics": {}
+    }
+  ],
+  "comparison": null
+}

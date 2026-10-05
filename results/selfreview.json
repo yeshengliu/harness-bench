@@ -1,0 +1,156 @@
+{
+  "ran_at": "2026-10-04 21:40:49",
+  "producer": "deepseek-v4.1-flash",
+  "repeat": 2,
+  "passing": 6,
+  "failing": 2,
+  "results": [
+    {
+      "mode": "same-provider",
+      "flagged_failing": 0,
+      "failing_total": 2,
+      "recall": 0.0,
+      "flagged_passing": 0,
+      "passing_total": 6,
+      "fp_rate": 0.0,
+      "errors": 0,
+      "seconds": 5.38,
+      "details": [
+        "dedupe: producer FAILED, refuter says CLEAN (MISSED)",
+        "dedupe: producer FAILED, refuter says CLEAN (MISSED)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)"
+      ]
+    },
+    {
+      "mode": "cross-provider",
+      "flagged_failing": 2,
+      "failing_total": 2,
+      "recall": 1.0,
+      "flagged_passing": 0,
+      "passing_total": 6,
+      "fp_rate": 0.0,
+      "errors": 0,
+      "seconds": 55.02,
+      "details": [
+        "dedupe: producer FAILED, refuter says DEFECT (caught)",
+        "dedupe: producer FAILED, refuter says DEFECT (caught)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)"
+      ]
+    },
+    {
+      "mode": "panel:glm-5.3-flash",
+      "flagged_failing": 0,
+      "failing_total": 2,
+      "recall": 0.0,
+      "flagged_passing": 0,
+      "passing_total": 6,
+      "fp_rate": 0.0,
+      "errors": 0,
+      "seconds": 54.05,
+      "details": [
+        "dedupe: producer FAILED, refuter says CLEAN (MISSED)",
+        "dedupe: producer FAILED, refuter says CLEAN (MISSED)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)"
+      ]
+    },
+    {
+      "mode": "panel:mimo-v2.6-flash",
+      "flagged_failing": 2,
+      "failing_total": 2,
+      "recall": 1.0,
+      "flagged_passing": 1,
+      "passing_total": 6,
+      "fp_rate": 0.167,
+      "errors": 1,
+      "seconds": 94.28,
+      "details": [
+        "dedupe: producer FAILED, refuter says DEFECT (caught)",
+        "dedupe: producer FAILED, refuter says DEFECT (caught)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: ERROR",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says DEFECT (false positive)"
+      ]
+    },
+    {
+      "mode": "panel:qwen3.8-flash",
+      "flagged_failing": 1,
+      "failing_total": 2,
+      "recall": 0.5,
+      "flagged_passing": 1,
+      "passing_total": 6,
+      "fp_rate": 0.167,
+      "errors": 0,
+      "seconds": 175.78,
+      "details": [
+        "dedupe: producer FAILED, refuter says DEFECT (caught)",
+        "dedupe: producer FAILED, refuter says CLEAN (MISSED)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says DEFECT (false positive)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)"
+      ]
+    },
+    {
+      "mode": "panel:minimax-m2.5",
+      "flagged_failing": 0,
+      "failing_total": 2,
+      "recall": 0.0,
+      "flagged_passing": 0,
+      "passing_total": 6,
+      "fp_rate": 0.0,
+      "errors": 1,
+      "seconds": 131.86,
+      "details": [
+        "dedupe: producer FAILED, refuter says CLEAN (MISSED)",
+        "dedupe: producer FAILED, refuter says CLEAN (MISSED)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: ERROR",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)"
+      ]
+    },
+    {
+      "mode": "panel:longcat-2.0",
+      "flagged_failing": 1,
+      "failing_total": 2,
+      "recall": 0.5,
+      "flagged_passing": 0,
+      "passing_total": 6,
+      "fp_rate": 0.0,
+      "errors": 3,
+      "seconds": 137.51,
+      "details": [
+        "dedupe: producer FAILED, refuter says DEFECT (caught)",
+        "dedupe: ERROR",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "chunk: producer PASSED, refuter says CLEAN (correct)",
+        "parse_duration: ERROR",
+        "parse_duration: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: producer PASSED, refuter says CLEAN (correct)",
+        "merge_ranges: ERROR"
+      ]
+    }
+  ]
+}

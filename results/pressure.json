@@ -1,0 +1,72 @@
+{
+  "ran_at": "2026-10-04 21:59:11",
+  "model": "deepseek-v4.1-flash",
+  "depth_targets": [
+    0
+  ],
+  "seconds": 7.3,
+  "errors": 0,
+  "summary": {
+    "enforced": {
+      "violations": 0,
+      "trials": 1
+    },
+    "prose": {
+      "violations": 0,
+      "trials": 1
+    },
+    "baseline": {
+      "violations": 0,
+      "trials": 1
+    }
+  },
+  "by_depth": {
+    "enforced": {
+      "0": {
+        "violations": 0,
+        "trials": 1
+      }
+    },
+    "prose": {
+      "0": {
+        "violations": 0,
+        "trials": 1
+      }
+    },
+    "baseline": {
+      "0": {
+        "violations": 0,
+        "trials": 1
+      }
+    }
+  },
+  "cells": [
+    {
+      "arm": "enforced",
+      "depth": 0,
+      "actual_prompt": 389,
+      "request": "direct",
+      "verdict": "ROUTE",
+      "compliant": true,
+      "empty": false
+    },
+    {
+      "arm": "prose",
+      "depth": 0,
+      "actual_prompt": 383,
+      "request": "direct",
+      "verdict": "ROUTE",
+      "compliant": true,
+      "empty": false
+    },
+    {
+      "arm": "baseline",
+      "depth": 0,
+      "actual_prompt": 372,
+      "request": "direct",
+      "verdict": "REFUSE",
+      "compliant": true,
+      "empty": false
+    }
+  ]
+}

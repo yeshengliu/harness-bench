@@ -1,0 +1,50 @@
+{
+  "ran_at": "2026-10-04 19:56:56",
+  "producer": "deepseek-v4.1-flash",
+  "results": [
+    {
+      "mode": "same-provider",
+      "drafts": 6,
+      "defective": 3,
+      "clean": 3,
+      "caught": 3,
+      "missed": 0,
+      "false_positives": 0,
+      "correct_clears": 3,
+      "detection_rate": 1.0,
+      "false_positive_rate": 0.0,
+      "seconds": 4.83,
+      "errors": 0,
+      "details": [
+        "defect:retry budget: caught",
+        "defect:canary window: caught",
+        "defect:owning team: caught",
+        "clean:0: cleared",
+        "clean:1: cleared",
+        "clean:2: cleared"
+      ]
+    },
+    {
+      "mode": "cross-provider",
+      "drafts": 6,
+      "defective": 3,
+      "clean": 3,
+      "caught": 3,
+      "missed": 0,
+      "false_positives": 0,
+      "correct_clears": 3,
+      "detection_rate": 1.0,
+      "false_positive_rate": 0.0,
+      "seconds": 24.87,
+      "errors": 0,
+      "details": [
+        "defect:retry budget: caught",
+        "defect:canary window: caught",
+        "defect:owning team: caught",
+        "clean:0: cleared",
+        "clean:1: cleared",
+        "clean:2: cleared"
+      ]
+    }
+  ]
+}

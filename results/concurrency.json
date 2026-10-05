@@ -1,0 +1,90 @@
+{
+  "ran_at": "2026-10-04 19:21:30",
+  "tasks": 6,
+  "rounds": [
+    {
+      "mode": "serial",
+      "model": "deepseek-v4.1-flash",
+      "n_tasks": 6,
+      "peak_context": 4649,
+      "final_context": 4649,
+      "total_prompt": 16050,
+      "total_completion": 572,
+      "total_context": 16050,
+      "calls": 6,
+      "seconds": 8.67,
+      "failures": 0,
+      "per_task_peak": [
+        714,
+        1487,
+        2276,
+        3066,
+        3858,
+        4649
+      ]
+    },
+    {
+      "mode": "concurrent",
+      "model": "deepseek-v4.1-flash",
+      "n_tasks": 6,
+      "peak_context": 712,
+      "final_context": 712,
+      "total_prompt": 4272,
+      "total_completion": 510,
+      "total_context": 4272,
+      "calls": 6,
+      "seconds": 1.29,
+      "failures": 0,
+      "per_task_peak": [
+        712,
+        712,
+        712,
+        712,
+        712,
+        712
+      ]
+    },
+    {
+      "mode": "serial",
+      "model": "qwen3.8-flash",
+      "n_tasks": 6,
+      "peak_context": 4837,
+      "final_context": 4837,
+      "total_prompt": 16861,
+      "total_completion": 1142,
+      "total_context": 16861,
+      "calls": 6,
+      "seconds": 29.87,
+      "failures": 0,
+      "per_task_peak": [
+        788,
+        1584,
+        2406,
+        3218,
+        4028,
+        4837
+      ]
+    },
+    {
+      "mode": "concurrent",
+      "model": "qwen3.8-flash",
+      "n_tasks": 6,
+      "peak_context": 786,
+      "final_context": 786,
+      "total_prompt": 4716,
+      "total_completion": 1507,
+      "total_context": 4716,
+      "calls": 6,
+      "seconds": 8.31,
+      "failures": 0,
+      "per_task_peak": [
+        786,
+        786,
+        786,
+        786,
+        786,
+        786
+      ]
+    }
+  ]
+}
